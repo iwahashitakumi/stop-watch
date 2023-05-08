@@ -4,16 +4,24 @@
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script src="jquery-3.6.4.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+ </script>
  <link rel="stylesheet" href="main.css">
  <title>ストップウォッチ</title>
  </head>
  
  <body>
  <h3>ストップウォッチ</h3>
- 
- <!-- ここに記述していきましょう！ -->
- 
+ <div class ="stopwatch">
+ <div id ="times">00:00</div>
+<form class=botton-type>
+ <button id="starts" onclick="start()">スタート</button>
+ <button id="stops"  onclick="stop()" disabled>ストップ</button>
+ <button id="resets" onclick="reset()" disabled>リセット</button>
+</form>
+ </div>
  <script src="main.js"></script>
  </body>
  </html>
